@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+我爱你
+<风格>
+正文{
+背景:# 000；
+身高:100vh
+溢出:隐藏；
+}
+
+#ui。爱情{
+位置:绝对；
+top:50%；
+左:50%；
+边距:-225 px 0 0-225 px；
+}
+#ui。爱情:最后一个孩子。love_word {
+颜色:# fff
+font-size:2 rem；
+text-shadow:0 0 10px # ea80b 0；
+}
+#ui。love_word {
+颜色:# ea80b0
+字体大小:1.4红色；
+transform:translate y(-100%)rotateZ(-30度)；
+字体系列:' Dosis '，无衬线；
+text-shadow:0 0 10px # fff；
+字母间距:2px
+}
+#ui。爱_横{
+动画:水平10000ms无限交替渐出；
+}
+#ui。爱情_垂直{
+动画:垂直20000ms无限线性；
+}
+#ui。爱情:第n个孩子(1)。爱_横{
+动画-延迟:-300 ms；
+}
+#ui .love:nth-child(1) .love_vertical {
+  animation-delay: -300ms;
+}
+#ui .love:nth-child(2) .love_horizontal {
+  animation-delay: -600ms;
+}
+#ui .love:nth-child(2) .love_vertical {
+  animation-delay: -600ms;
+}
+#ui .love:nth-child(3) .love_horizontal {
+  animation-delay: -900ms;
+}
+#ui .love:nth-child(3) .love_vertical {
+  animation-delay: -900ms;
+}
+#ui .love:nth-child(4) .love_horizontal {
+  animation-delay: -1200ms;
+}
+#ui .love:nth-child(4) .love_vertical {
+  animation-delay: -1200ms;
+}
+#ui .love:nth-child(5) .love_horizontal {
+  animation-delay: -1500ms;
+}
+#ui .love:nth-child(5) .love_vertical {
+  animation-delay: -1500ms;
+}
+#ui .love:nth-child(6) .love_horizontal {
+  animation-delay: -1800ms;
+}
+#ui .love:nth-child(6) .love_vertical {
+  animation-delay: -1800ms;
+}
+#ui .love:nth-child(7) .love_horizontal {
+  animation-delay: -2100ms;
+}
+#ui .love:nth-child(7) .love_vertical {
+  animation-delay: -2100ms;
+}
+#ui .love:nth-child(8) .love_horizontal {
+  animation-delay: -2400ms;
+}
+#ui .love:nth-child(8) .love_vertical {
+  animation-delay: -2400ms;
+}
+#ui .love:nth-child(9) .love_horizontal {
+  animation-delay: -2700ms;
+}
+#ui .love:nth-child(9) .love_vertical {
+  animation-delay: -2700ms;
+}
+#ui .love:nth-child(10) .love_horizontal {
+  animation-delay: -3000ms;
+}
+#ui .love:nth-child(10) .love_vertical {
+  animation-delay: -3000ms;
+}
+#ui .love:nth-child(11) .love_horizontal {
+  animation-delay: -3300ms;
+}
+#ui .love:nth-child(11) .love_vertical {
+  animation-delay: -3300ms;
+}
+#ui .love:nth-child(12) .love_horizontal {
+  animation-delay: -3600ms;
+}
+#ui .love:nth-child(12) .love_vertical {
+  animation-delay: -3600ms;
+}
+#ui .love:nth-child(13) .love_horizontal {
+  animation-delay: -3900ms;
+}
+#ui .love:nth-child(13) .love_vertical {
+  animation-delay: -3900ms;
+}
+#ui .love:nth-child(14) .love_horizontal {
+  animation-delay: -4200ms;
+}
+#ui .love:nth-child(14) .love_vertical {
+  animation-delay: -4200ms;
+}
+#ui .love:nth-child(15) .love_horizontal {
+  animation-delay: -4500ms;
+}
+#ui .love:nth-child(15) .love_vertical {
+  animation-delay: -4500ms;
+}
+#ui .love:nth-child(16) .love_horizontal {
+  animation-delay: -4800ms;
+}
+#ui .love:nth-child(16) .love_vertical {
+  animation-delay: -4800ms;
+}
+#ui .love:nth-child(17) .love_horizontal {
+  animation-delay: -5100ms;
+}
+#ui .love:nth-child(17) .love_vertical {
+  animation-delay: -5100ms;
+}
+#ui .love:nth-child(18) .love_horizontal {
+  animation-delay: -5400ms;
+}
+#ui .love:nth-child(18) .love_vertical {
+  animation-delay: -5400ms;
+}
+#ui .love:nth-child(19) .love_horizontal {
+  animation-delay: -5700ms;
+}
+#ui .love:nth-child(19) .love_vertical {
+  animation-delay: -5700ms;
+}
+#ui .love:nth-child(20) .love_horizontal {
+  animation-delay: -6000ms;
+}
+#ui .love:nth-child(20) .love_vertical {
+  animation-delay: -6000ms;
+}
+#ui .love:nth-child(21) .love_horizontal {
+  animation-delay: -6300ms;
+}
+#ui .love:nth-child(21) .love_vertical {
+  animation-delay: -6300ms;
+}
+#ui .love:nth-child(22) .love_horizontal {
+  animation-delay: -6600ms;
+}
+#ui .love:nth-child(22) .love_vertical {
+  animation-delay: -6600ms;
+}
+#ui .love:nth-child(23) .love_horizontal {
+  animation-delay: -6900ms;
+}
+#ui .love:nth-child(23) .love_vertical {
+  animation-delay: -6900ms;
+}
+#ui .love:nth-child(24) .love_horizontal {
+  animation-delay: -7200ms;
+}
+#ui .love:nth-child(24) .love_vertical {
+  animation-delay: -7200ms;
+}
+#ui .love:nth-child(25) .love_horizontal {
+  animation-delay: -7500ms;
+}
+#ui .love:nth-child(25) .love_vertical {
+  animation-delay: -7500ms;
+}
+#ui。爱情:第n胎(26)。爱_横{
+动画-延迟:-7800 ms；
+}
+#ui。爱情:第n胎(26)。爱情_垂直{
+动画-延迟:-7800 ms；
+}
+#ui。爱情:第n胎(27)。爱_横{
+动画-延迟:-8100 ms；
+}
+#ui。爱情:第n胎(27)。爱情_垂直{
+动画-延迟:-8100 ms；
+}
+#ui。爱情:第n胎(28)。爱_横{
+动画-延迟:-8400 ms；
+}
+#ui。爱情:第n胎(28)。爱情_垂直{
+动画-延迟:-8400 ms；
+}
+#ui。爱情:第n胎(29)。爱_横{
+动画-延迟:-8700 ms；
+}
+#ui .love:nth-child(29) .love_vertical {
+  animation-delay: -8700ms;
+}
+#ui .love:nth-child(30) .love_horizontal {
+  animation-delay: -9000ms;
+}
+#ui .love:nth-child(30) .love_vertical {
+  animation-delay: -9000ms;
+}
+#ui .love:nth-child(31) .love_horizontal {
+  animation-delay: -9300ms;
+}
+#ui .love:nth-child(31) .love_vertical {
+  animation-delay: -9300ms;
+}
+#ui .love:nth-child(32) .love_horizontal {
+  animation-delay: -9600ms;
+}
+#ui .love:nth-child(32) .love_vertical {
+动画-延迟:-9600 ms；
+}
+#ui .love:nth-child(33) .love_horizontal {
+  animation-delay: -9900ms;
+}
+#ui .love:nth-child(33) .love_vertical {
+  animation-delay: -9900ms;
+}
+#ui .love:nth-child(34) .love_horizontal {
+  animation-delay: -10200ms;
+}
+#ui .love:nth-child(34) .love_vertical {
+  animation-delay: -10200ms;
+}
+#ui .love:nth-child(35) .love_horizontal {
+  animation-delay: -10500ms;
+}
+#ui。爱情:第n胎(35)。爱情_垂直{
+动画-延迟:-10500 ms；
+<!文档类型html >
+< html lang = " en " > < head > < meta http-equiv = " Content-Type " Content = " text/html；charset=UTF-8 " >
+动画-延迟:-10800 ms；
+我爱你
+<风格>
+动画-延迟:-10800 ms；
+}
+#ui。爱情:第n胎(37)。爱_横{
+动画-延迟:-11100 ms；
+}
+#ui。爱情:第n胎(37)。爱情_垂直{
+动画-延迟:-11100 ms；
+}
+#ui。爱情:第n胎(38)。爱_横{
+动画-延迟:-11400 ms；
+}
+#ui。爱情:第n胎(38)。爱情_垂直{
+动画-延迟:-11400 ms；
+}
+#ui。爱情:第n胎(39)。爱_横{
+  animation-delay: -11700ms;
+}
+#ui。爱情:第n胎(39)。爱情_垂直{
+动画-延迟:-11700 ms；
+}
+#ui。爱情:第n胎(40)。爱_横{
+动画-延迟:-12000 ms；
+#ui。爱情:第n胎(21)。爱_横{
+动画-延迟:-6300 ms；
+  animation-delay: -12000ms;
+#ui。爱情:第n胎(21)。爱情_垂直{
+动画-延迟:-6300 ms；
+动画-延迟:-12300 ms；
+#ui。爱情:第n胎(22)。爱_横{
+动画-延迟:-6600 ms；
+动画-延迟:-12300 ms；
+#ui。爱情:第n胎(22)。爱情_垂直{
+动画-延迟:-6600 ms；
+动画-延迟:-12600 ms；
+#ui。爱情:第n胎(23)。爱_横{
+动画-延迟:-6900 ms；
+  animation-delay: -12600ms;
+#ui。爱情:第n胎(23)。爱情_垂直{
+动画-延迟:-6900 ms；
+动画-延迟:-12900 ms；
+#ui。爱情:第n胎(24)。爱_横{
+动画-延迟:-7200 ms；
+动画-延迟:-12900 ms；
+#ui。爱情:第n胎(24)。爱情_垂直{
+动画-延迟:-7200 ms；
+动画
