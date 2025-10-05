@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给特别的你</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        
+        h1 {
+            color: #ff66b3;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .heart {
+            color: #ff66b3;
+            font-size: 30px;
+            animation: beat 1s infinite alternate;
+            display: inline-block;
+        }
+        
+        button {
+            background-color: #ff66b3;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+        
+        button:hover {
+            background-color: #ff3385;
+            transform: scale(1.05);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .flowers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .flower {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0;
+            animation: float 5s linear infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flowers" id="flowers"></div>
+    
+    <div class="container" id="main">
+        <h1>给特别的你 <span class="heart">❤</span></h1>
+        <p>从遇见你的那一刻起，我的心就不再属于我自己。</p>
+        <p>你的笑容是我每天最期待的风景，</p>
+        <p>你的声音是我听过最动听的旋律。</p>
+        <p>我想对你说...</p>
+        
+        <button onclick="showQuestion()">点击继续</button>
+    </div>
+    
+    <div class="container hidden" id="question">
+        <h1>你愿意和我在一起吗? <span class="heart">❤</span></h1>
+        <p>我会用一生的时间去珍惜你、爱护你</p>
+        
+        <button onclick="showYes()" style="background-color: #4CAF50;">愿意</button>
+        <button onclick="moveButton()" id="no-btn">再想想</button>
+    </div>
+    
+    <div class="container hidden" id="yes">
+        <h1>谢谢你! <span class="heart">❤</span></h1>
+        <p>这是我生命中最幸福的时刻!</p>
+        <p>我会永远爱你，珍惜你，</p>
+        <p>和你一起创造属于我们的美好回忆。</p>
+        <div id="hearts-container"></div>
+    </div>
+    
+    <script>
+        function showQuestion() {
+            document.getElementById('main').classList.add('hidden');
+            document.getElementById('question').classList.remove('hidden');
+            createFlowers();
+        }
+        
+        function showYes() {
+            document.getElementById('question').classList.add('hidden');
+            document.getElementById('yes').classList.remove('hidden');
+            createHearts();
+        }
+        
+        function moveButton() {
+            const btn = document.getElementById('no-btn');
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+            btn.style.position = 'absolute';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        }
+        
+        function createFlowers() {
+            const flowersContainer = document.getElementById('flowers');
+            const flowers = ['🌸', '🌹', '🌺', '🌻', '🌼', '🌷', '💐', '🏵️'];
+            
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const flower = document.createElement('div');
+                    flower.className = 'flower';
+                    flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+                    flower.style.left = Math.random() * 100 + 'vw';
+                    flower.style.animationDuration = 3 + Math.random() * 7 + 's';
+                    flower.style.animationDelay = Math.random() * 5 + 's';
+                    flowersContainer.appendChild(flower);
+                    
+                    // 移除花朵元素以避免内存泄漏
+                    setTimeout(() => {
+                        flower.remove();
+                    }, 10000);
+                }, i * 300);
+            }
+        }
+        
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts-container');
+            const hearts = ['❤', '🧡', '💛', '💚', '💙', '💜', '🤎', '🖤', '🤍'];
+            
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'heart';
+                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.animationDuration = 0.5 + Math.random() * 1 + 's';
+                    heartsContainer.appendChild(heart);
+                }, i * 100);
+            }
+        }
+    </script>
+</body>
+</html>
